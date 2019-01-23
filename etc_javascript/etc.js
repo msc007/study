@@ -58,3 +58,10 @@ console.log(1 +  -"1" + "2");     //"02"
 console.log(+"1" +  "1" + "2");   //"112"
 console.log( "A" - "B" + "2");    //NaN2
 console.log( "A" - "B" + 2);      //NaN
+
+/* Const keyword
+ * const is not refering to immutablity, it creates immutable binding
+ */
+const foo = {};
+foo.bar = 42;
+console.log(foo.bar); //output: 42
