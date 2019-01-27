@@ -1,5 +1,3 @@
-
-
 /* Cross-Site-Request-Forgery
  *  - Attacker forges a request through hyperlinks
  *  - When victim clicks on the link, it send the request to the target website with victim's authenticated session

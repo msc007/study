@@ -65,3 +65,14 @@ console.log( "A" - "B" + 2);      //NaN
 const foo = {};
 foo.bar = 42;
 console.log(foo.bar); //output: 42
+
+/* Arrow function vs refular function
+ * object method should not be defined as arrow function, because 'this' inside arrow function will be inherits value from its parent scope.
+ * i.e) below cat.jumps() function will not increase cat.lives
+ */
+ var cat = {
+  lives: 0,
+  jumps: () => {
+    this.lives++;
+  }
+}
